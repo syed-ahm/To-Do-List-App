@@ -35,9 +35,11 @@ class TodoItem extends React.Component {
 
 // PropTypes
 TodoItem.propTypes = {
-    todos: PropTypes.object.isRequired
+    todos: PropTypes.object.isRequired,
+    markComplete: PropTypes.func.isRequired
 }
 
+// Styles
 const btnStyle = {
     background : "#FF0000",
     color: '#fff',
@@ -47,5 +49,6 @@ const btnStyle = {
     cursor: 'pointer',
     float: 'right'
 }
+
 
 export default TodoItem
